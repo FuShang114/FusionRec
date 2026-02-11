@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "u-divider": "../../uni_modules/vk-uview-ui/components/u-divider/u-divider",
+    "u-lazy-load": "../../uni_modules/vk-uview-ui/components/u-lazy-load/u-lazy-load",
+    "u-waterfall": "../../uni_modules/vk-uview-ui/components/u-waterfall/u-waterfall"
+  }
+}

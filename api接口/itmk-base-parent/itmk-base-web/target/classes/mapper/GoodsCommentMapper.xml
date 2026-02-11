@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itmk.web.goods_comment.mapper.GoodsCommentMapper">
+    <select id="commentList" resultType="com.itmk.web.goods_comment.entity.GoodsComment">
+        select w.nick_name,w.avatar_url,g.* from goods_comment as g inner join wx_user as w on g.openid = w.openid
+        where g.goods_id =#{goodsId}
+    </select>
+    <select id="getList" resultType="com.itmk.web.goods_comment.entity.GoodsComment">
+        SELECT c.*,u.avatar_url,u.nick_name,gs.goods_name,gs.goods_image
+        FROM goods_comment as c
+        inner join wx_user as u on c.openid = u.openid
+        inner join sys_goods as gs on gs.goods_id = c.goods_id
+        order by c.create_time  desc
+    </select>
+</mapper>

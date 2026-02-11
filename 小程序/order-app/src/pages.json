@@ -1,0 +1,115 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/car/car",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/address/address",
+			"style": {
+				"navigationBarTitleText": "新增地址",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/confirm/confirm",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/addresslist/addresslist",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": false
+			}
+		
+		}
+	    ,{
+            "path" : "pages/collect/collect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		// 导航字体颜色，仅支持 black/white
+		"navigationBarTextStyle": "white",
+		//导航全局标题，当页面没有配置的时候生效
+		"navigationBarTitleText": "微信点餐小程序",
+		//导航字体颜色
+		"navigationBarBackgroundColor": "#F3AF28",
+		//下拉显示出来的窗口的背景色
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#F3AF28",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/home_select.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/category/category",
+			"iconPath": "static/category.png",
+			"selectedIconPath": "static/category_select.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/car/car",
+			"iconPath": "static/car.png",
+			"selectedIconPath": "static/car_select.png",
+			"text": "购物车"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/mine.png",
+			"selectedIconPath": "static/mine_select.png",
+			"text": "我的"
+		}]
+	}
+}

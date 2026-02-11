@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/car/car",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/address/address",
+    "pages/confirm/confirm",
+    "pages/addresslist/addresslist",
+    "pages/order/order",
+    "pages/collect/collect"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "微信点餐小程序",
+    "navigationBarBackgroundColor": "#F3AF28",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#F3AF28",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "static/category.png",
+        "selectedIconPath": "static/category_select.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "iconPath": "static/car.png",
+        "selectedIconPath": "static/car_select.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/mine.png",
+        "selectedIconPath": "static/mine_select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

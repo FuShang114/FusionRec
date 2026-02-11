@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>itmk-base-parent</artifactId>
+        <groupId>com.itmk</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+     <packaging>jar</packaging>
+    <artifactId>itmk-base-web</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.itmk</groupId>
+            <artifactId>itmk-base-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--web启动器,对springmvc,serlvet等支持-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--数据库依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--mybatis-plus启动器-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!--druid连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- swagger api文档 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.18</version>
+        </dependency>
+		<dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+        <!--图片验证码-->
+        <dependency>
+            <groupId>com.github.penggle</groupId>
+            <artifactId>kaptcha</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <!-- Spring Boot 打包插件：使用与核心依赖匹配的稳定版（推荐 2.7.x 或 3.x） -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 重点：版本需与你项目中 spring-boot-starter-parent 的版本一致 -->
+                <!-- 若你的 parent 是 2.7.x，用 2.7.18；若为 3.x，用 3.2.2（最新稳定版） -->
+                <version>2.7.18</version>
+                <!-- 新增：绑定 repackage 目标，确保打包为可执行 jar -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Maven 编译插件：升级到稳定新版，适配 Java 8+ -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <!-- 3.11.0 是兼容 Java 8-17 的稳定版 -->
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <!-- 新增：编码配置，避免中文乱码（可选但推荐） -->
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- 单元测试插件：升级到稳定新版 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <!-- 3.2.5 是最新稳定版，兼容新版 Maven -->
+                <version>3.2.5</version>
+                <configuration>
+                    <skipTests>true</skipTests> <!-- 保留跳过测试的配置 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

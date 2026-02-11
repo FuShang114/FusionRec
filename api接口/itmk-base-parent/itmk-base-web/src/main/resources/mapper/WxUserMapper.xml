@@ -1,0 +1,41 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itmk.web.wx_user.mapper.WxUserMapper">
+    	<insert id="saveOrUpdateInfo" parameterType="com.itmk.web.wx_user.entity.WxUser">
+        insert into wx_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="user.openid != null and user.openid !=''">
+                openid,
+            </if>
+            <if test="user.nickName != null and user.nickName !=''">
+                nick_name,
+            </if>
+            <if test="user.avatarUrl != null and user.avatarUrl !=''">
+                avatar_url,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="user.openid != null and user.openid !=''">
+                #{user.openid},
+            </if>
+            <if test="user.nickName != null and user.nickName !=''">
+                #{user.nickName},
+            </if>
+            <if test="user.avatarUrl != null and user.avatarUrl !=''">
+                #{user.avatarUrl},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim>
+            <if test="user.nickName != null and user.nickName !=''">
+                nick_name = #{user.nickName},
+            </if>
+            <if test="user.avatarUrl != null and user.avatarUrl !=''">
+                avatar_url = #{user.avatarUrl},
+            </if>
+        </trim>
+    </insert>
+
+</mapper>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-tabs-swiper": "../../uni_modules/vk-uview-ui/components/u-tabs-swiper/u-tabs-swiper",
+    "u-icon": "../../uni_modules/vk-uview-ui/components/u-icon/u-icon",
+    "u-loadmore": "../../uni_modules/vk-uview-ui/components/u-loadmore/u-loadmore",
+    "u-modal": "../../uni_modules/vk-uview-ui/components/u-modal/u-modal"
+  }
+}

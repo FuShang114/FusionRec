@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "新增地址",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-picker": "../../uni_modules/vk-uview-ui/components/u-picker/u-picker",
+    "u-button": "../../uni_modules/vk-uview-ui/components/u-button/u-button"
+  }
+}

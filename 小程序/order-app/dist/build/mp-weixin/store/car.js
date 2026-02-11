@@ -1,0 +1,1 @@
+"use strict";const t=require("../common/vendor.js").defineStore("carStore",{state:()=>({count:0,carList:[]}),actions:{increment(){this.count++},addCar(t){const s=this.carList.findIndex((s=>t.goodsId==s.goodsId));s>-1&&this.carList.splice(s,1),this.carList.push(t)}}});exports.carStore=t;

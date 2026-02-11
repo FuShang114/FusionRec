@@ -1,0 +1,1 @@
+"use strict";var e=require("./deepClone.js");exports.deepMerge=function t(o={},r={}){if("object"!=typeof(o=e.deepClone(o))||"object"!=typeof r)return!1;for(var c in r)r.hasOwnProperty(c)&&(c in o?"object"!=typeof o[c]||"object"!=typeof r[c]?o[c]=r[c]:o[c].concat&&r[c].concat?o[c]=o[c].concat(r[c]):o[c]=t(o[c],r[c]):o[c]=r[c]);return o};

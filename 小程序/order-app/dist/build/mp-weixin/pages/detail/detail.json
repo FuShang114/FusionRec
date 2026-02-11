@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-swiper": "../../uni_modules/vk-uview-ui/components/u-swiper/u-swiper",
+    "u-parse": "../../uni_modules/vk-uview-ui/components/u-parse/u-parse",
+    "u-icon": "../../uni_modules/vk-uview-ui/components/u-icon/u-icon",
+    "u-badge": "../../uni_modules/vk-uview-ui/components/u-badge/u-badge"
+  }
+}

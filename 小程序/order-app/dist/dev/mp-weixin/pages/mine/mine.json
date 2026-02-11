@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-cell-item": "../../uni_modules/vk-uview-ui/components/u-cell-item/u-cell-item",
+    "u-cell-group": "../../uni_modules/vk-uview-ui/components/u-cell-group/u-cell-group"
+  }
+}
