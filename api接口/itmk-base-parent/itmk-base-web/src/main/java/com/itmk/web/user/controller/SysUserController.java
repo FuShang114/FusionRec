@@ -15,14 +15,13 @@ import com.itmk.web.wxapi.entity.LoginParm;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import sun.misc.BASE64Encoder;
-
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Base64;
 import java.util.List;
 
 /**
@@ -99,8 +98,7 @@ public class SysUserController {
         try {
             outputStream = new ByteArrayOutputStream();
             ImageIO.write(bufferedImage, "jpg", outputStream);
-            BASE64Encoder encoder = new BASE64Encoder();
-            String base64 = encoder.encode(outputStream.toByteArray());
+            String base64 = Base64.getEncoder().encodeToString(outputStream.toByteArray());
             String captchaBase64 = "data:image/jpeg;base64," + base64.replaceAll("\r\n", "");
             ResultVo result = new ResultVo("生成成功", 200, captchaBase64);
             return result;

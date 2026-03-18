@@ -1,7 +1,7 @@
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\BusinessExceptionEnum.java
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\FastJsonTools.java
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\HttpClientUtil.java
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\ResultUtils.java
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\ResultVo.java
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\StatusCode.java
-D:\源码\api接口\itmk-base-parent\itmk-base-common\src\main\java\com\itmk\utils\BusinessException.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/ResultUtils.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/BusinessException.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/ResultVo.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/FastJsonTools.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/BusinessExceptionEnum.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/StatusCode.java
+/Users/caiwu/Documents/trae_projects/FusionRec/api接口/itmk-base-parent/itmk-base-common/src/main/java/com/itmk/utils/HttpClientUtil.java
